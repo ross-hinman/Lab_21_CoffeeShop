@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+    
+<h2>@ViewBag.Title</h2><br />
+<h3>@ViewBag.Message</h3>
+@{
+<body>
+    <form action="/Home/AddUser" method="get">
+        <div>
+            <label for="FirstName">First Name</label>
+            <input type="text" name="FirstName" value="" />
+        </div>
+        <div>
+            <label for="LastName">Last Name</label>
+            <input type="text" name="LastName" value="" />
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="text" name="Email" value="" />
+        </div>
+        <div>
+            <label for="PhoneNumber">Phone Number</label>
+            <input type="number" name="PhoneNumber" value="" />
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+    }
