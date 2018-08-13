@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Register";
 }
-    
+
 <h2>@ViewBag.Title</h2><br />
 <h3>@ViewBag.Message</h3>
 @{
@@ -9,7 +9,7 @@
     <form action="/Home/AddUser" method="get">
         <div>
             <label for="FirstName">First Name</label>
-            <input type="text" name="FirstName" value="" />
+            <input type="text" name="FirstName" value="" required />
         </div>
         <div>
             <label for="LastName">Last Name</label>
@@ -17,15 +17,16 @@
         </div>
         <div>
             <label for="Email">Email</label>
-            <input type="text" name="Email" value="" />
+            <input type="email" name="Email" value="" required />
         </div>
         <div>
             <label for="PhoneNumber">Phone Number</label>
-            <input type="number" name="PhoneNumber" value="" />
+            <input type="tel" name="PhoneNumber" value="" required />
         </div>
         <div>
             <input type="submit" value="Submit" />
         </div>
     </form>
+    <img src="~/Content/caffiene.gif" />
 </body>
     }

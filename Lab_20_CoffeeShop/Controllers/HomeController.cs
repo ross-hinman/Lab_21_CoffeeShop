@@ -16,14 +16,14 @@ namespace Lab_20_CoffeeShop.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "This is all about GC Coffee!";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Our contact page.";
 
             return View();
         }
@@ -36,7 +36,7 @@ namespace Lab_20_CoffeeShop.Controllers
 
         public ActionResult AddUser(string FirstName, string LastName, string Email, string PhoneNumber)
         {
-            ViewBag.Message = $"Hello {FirstName}";
+            ViewBag.Message = $"Hello {FirstName}!";
             return View();
         }
 
