@@ -1,4 +1,5 @@
 ﻿using Lab_20_CoffeeShop;
+using Lab_20_CoffeeShop.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,15 +29,15 @@ namespace Lab_20_CoffeeShop.Controllers
             return View();
         }
 
-        public ActionResult Register()
+        public ActionResult RegisterPerson(PersonViewModel model)
         {
             ViewBag.Message = "Please fill out the form to register!";
-            return View();
+            return View(model);
         }
 
-        public ActionResult AddUser(string FirstName, string LastName, string Email, string PhoneNumber)
+        public ActionResult AddUser(string FirstName)
         {
-            ViewBag.Message = $"Hello {FirstName}!";
+            ViewBag.FirstName = FirstName;
             return View();
         }
 
