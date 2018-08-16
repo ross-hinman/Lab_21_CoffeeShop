@@ -29,6 +29,10 @@ namespace Lab_20_CoffeeShop.Models
         public string PhoneNumber { get; set; }
 
         [Required]
+        [Display(Name = "Favorite Coffee")]
+        public string FavCoffee { get; set; }
+
+        [Required]
         [MinLength(6, ErrorMessage ="Must be more than 6 characters")]
         public string Password { get; set; }
 
@@ -36,5 +40,8 @@ namespace Lab_20_CoffeeShop.Models
         [Compare(nameof(Password), ErrorMessage ="Does not match password")]
         [Display(Name = "Confirm Password")]
         public string ConfirmPassword { get; set; }
+
+        
+
     }
 }

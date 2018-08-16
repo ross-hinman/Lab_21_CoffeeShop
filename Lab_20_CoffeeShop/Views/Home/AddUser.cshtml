@@ -1,8 +1,11 @@
 ﻿@model Lab_20_CoffeeShop.Models.PersonViewModel
-@{ 
+@{
     ViewBag.Title = "User Added";
 }
 
 <h2>@ViewBag.Title</h2>
 <h3>Hello @ViewBag.FirstName!</h3>
-<img src="~/Content/excited.gif" height="300" width="300"/>
+<h3>It looks like @ViewBag.FavCoffee is your favorite coffee. Would you like to add this coffee to your cart?</h3>
+<a href="/Home/Cart" Class="btn btn-default btn-lg">Add to Cart</a>
+<br />
+<img src="~/Content/excited.gif" height="300" width="300" />
